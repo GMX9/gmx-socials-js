@@ -1,10 +1,10 @@
-# gmx-socials-js
-Integrate Social Networks sharing in your website easily
+### gmx-socials-js
+Integrate Social Networks sharing in your website easily with this javascript library.
 
-# How to use:
+### How to use:
 
 First, set the socials you want to use and their link:
-
+```
  <script>
     // Social Name => Link
     var socials = [
@@ -13,7 +13,10 @@ First, set the socials you want to use and their link:
       ['Linkedin', '#']
     ];
  </script>
+```
 
 Then load gmx-socials.js:
-
+```
  <script type="text/javascript" src="gmx-socials.js"></script>
+```
+
