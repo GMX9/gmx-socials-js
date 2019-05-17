@@ -1,6 +1,8 @@
 ### gmx-socials-js
 Integrate Social Networks sharing in your website easily with this javascript library.
 
+![alt text](https://i.imgur.com/SYGwnJv.png)
+
 ### How to use:
 
 First, set the socials you want to use and their link:
