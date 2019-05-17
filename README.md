@@ -10,7 +10,12 @@ First, set the socials you want to use and their link:
     var socials = [
       ['Facebook', '#'],
       ['Twitter', '#'],
-      ['Linkedin', '#']
+      ['Linkedin', '#'],
+      ['Tumblr', '#'],
+      ['VK', '#'],
+      ['Pinterest', '#'],
+      ['WhatsApp', '#'],
+      ['Telegram', '#']
     ];
  </script>
 ```
