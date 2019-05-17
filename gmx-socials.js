@@ -14,7 +14,7 @@ function generateSocialButtons(socialLink,socialClass,socialIcon,socialTitle){
 function styleSheet(){
     
     var fontawesome = '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">';
-    var stylesheet = '<style>.social{ color:white; float:left; margin-right:10px; padding-right:18px; padding-top:11px; padding-bottom:11px; padding-left:18px; border-radius:0px; border:0px; transition: all .4s ease; -webkit-transition: all .4s ease; } .social:hover{ margin-top:-15px; } .social i{ margin-right:10px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#00405d !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
+    var stylesheet = '<style>.social{ color:white; float:left; margin-right:10px; padding-right:18px; padding-top:11px; padding-bottom:11px; padding-left:18px; border-radius:0px; border:0px; transition: all .4s ease; -webkit-transition: all .4s ease; } .social:hover{ margin-top:-15px; } .social i{ margin-right:10px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#0088cc !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
     var bootstrap_css = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">';
     
     $("head").append(bootstrap_css);
@@ -62,7 +62,7 @@ function socialClass(socialNetwork){
     var s_VK = "vk";
     var s_WhatsApp = "whatsapp";
     var s_Pinterest = "pinterest";
-    var s_Telegram = "Telegram";
+    var s_Telegram = "telegram";
     
     var s_Social = "";
     
