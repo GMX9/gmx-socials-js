@@ -1,0 +1,29 @@
+{
+  "name": "gmx-socials-js",
+  "description": "Integrate Social Networks sharing in your website easily with this javascript library.",
+  "main": [
+    "gmx-socials.js"
+  ],
+  "dependencies": {
+    "get-size": "~1.2.2",
+    "eventEmitter": "~4.2.11"
+  },
+  "devDependencies": {
+    "qunit": "~1.16.0"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "socialnetwork",
+    "social",
+    "js"
+  ],
+  "authors": [
+    "Goncalo Maia <geral@goncalo.online>"
+  ],
+  "license": "MIT"
+  "private": false
+}
