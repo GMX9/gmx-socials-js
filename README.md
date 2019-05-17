@@ -10,15 +10,15 @@ First, set the socials you want to use and their link:
  <script>
     // Social Name => Link
     var socials = [
-      ['Facebook', '#'],
-      ['Twitter', '#'],
-      ['Linkedin', '#'],
-      ['Tumblr', '#'],
-      ['VK', '#'],
-      ['Pinterest', '#'],
-      ['WhatsApp', '#'],
-      ['Telegram', '#']
-    ];
+       'Facebook',
+       'Twitter',
+       'Linkedin',
+       'Tumblr',
+       'VK',
+       'Pinterest',
+       'WhatsApp',
+       'Telegram'
+     ];
  </script>
 ```
 
