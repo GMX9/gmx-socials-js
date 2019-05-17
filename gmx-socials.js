@@ -141,8 +141,8 @@ styleSheet();
 
 socials.forEach(function(entry) {
         
-    var socialNetwork = entry[0];
-    var socialLink = entry[1];
+    var socialNetwork = entry;
+    var socialLink = window.location.href;
 
     generateSocialButtons(socialLinks(socialNetwork,socialLink),socialClass(socialNetwork),socialIcon(socialNetwork),socialTitle(socialNetwork));
     console.log("Generating..");
