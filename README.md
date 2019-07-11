@@ -5,7 +5,7 @@ Integrate Social Networks sharing in your website easily with this javascript li
 
 ### How to use:
 
-First, set the socials you want to use and their link:
+First, set the socials you want to use:
 ```
  <script>
     // Social Name => Link
