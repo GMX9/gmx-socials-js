@@ -2,6 +2,8 @@
 Integrate Social Networks sharing in your website easily with this javascript library.
 
 ![alt text](https://i.imgur.com/SYGwnJv.png)
+![alt text](https://i.imgur.com/AvcrR5V.png)
+![alt text](https://i.imgur.com/IRbJzso.png)
 
 ### How to use:
 
