@@ -12,7 +12,7 @@ First, load gmx-socials.js:
     <script type="text/javascript" type="" src="gmx-socials.js"></script>
 ```
 
-Second, set the socials you want to use:
+Second, set the socials you want to use and style of buttons:
 ```
     <!-- Config your socials and link here -->
     <script>
@@ -27,7 +27,18 @@ Second, set the socials you want to use:
        'WhatsApp',
        'Telegram'
      ];
-    let s = new gmx_socials(socials);
+     
+     /*
+     Buttons Style
+     Styles avaliable
+     1-> "default"
+     2-> "icon_squared"
+     3-> "icon_rounded"
+     */
+     
+     var style = "icon_rounded"
+     
+     let s = new gmx_socials(socials,style);
     </script>
 ```
 
