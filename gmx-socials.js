@@ -1,15 +1,15 @@
 class gmx_socials{
 
-    constructor(entry){
+    constructor(entry,style){
 
-        this.styleSheet();
+        this.styleSheet(style);
 
         socials.forEach((entry) => {
                 
             var socialNetwork = entry;
             var socialLink = window.location.href;
 
-            this.generateSocialButtons(this.socialLinks(socialNetwork,socialLink),this.socialClass(socialNetwork),this.socialIcon(socialNetwork),this.socialTitle(socialNetwork));
+            this.generateSocialButtons(this.socialLinks(socialNetwork,socialLink),this.socialClass(socialNetwork),this.socialIcon(socialNetwork),this.socialTitle(socialNetwork),style);
             console.log("Generating..");
             
         });
@@ -17,20 +17,34 @@ class gmx_socials{
     }
 
     // Generate Social Buttons
-    generateSocialButtons(socialLink,socialClass,socialIcon,socialTitle){
+    generateSocialButtons(socialLink,socialClass,socialIcon,socialTitle,style){
         
         // Default button
-        var defButton = '<a href="'+socialLink+'"><button type="button" class="btn btn-secondary social '+socialClass+'"><i class="'+socialIcon+'"></i> '+socialTitle+'</button></a>';
+        if(style == "default"){
+            var defButton = '<a href="'+socialLink+'"><button type="button" class="btn btn-secondary gmx-social '+socialClass+'"><i class="'+socialIcon+'"></i> '+socialTitle+'</button></a>';
+        }else{
+            var defButton = '<a href="'+socialLink+'"><button type="button" class="btn btn-secondary gmx-social '+socialClass+'"><i class="'+socialIcon+'"></i></button></a>';
+        }
         
         $(".gmx_inline-socials").append(defButton);
         
     }    
 
-    // Generate needed styles
-    styleSheet(){
+    // Generate needed styles 
+    styleSheet(style){
         
         var fontawesome = '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">';
-        var stylesheet = '<style>.social{ color:white; float:left; margin-right:10px; padding-right:18px; padding-top:11px; padding-bottom:11px; padding-left:18px; border-radius:0px; border:0px; transition: all .4s ease; -webkit-transition: all .4s ease; } .social:hover{ margin-top:-15px; } .social i{ margin-right:10px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#0088cc !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
+        var stylesheet_default = '<style>.gmx-social{ color:white; float:left; margin-right:10px; padding-right:14px; font-size:13px; padding-top:8px; padding-bottom:8px; padding-left:14px; border-radius:0px; border:0px; transition: all .4s ease; -webkit-transition: all .4s ease; } .gmx-social:hover{ margin-top:-15px; } .gmx-social i{ margin-right:10px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#0088cc !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
+        var stylesheet_icon_squared = '<style>.gmx-social{ color: white; float: left; margin-right: 10px; padding-right: 14px; padding-top: 8px; padding-bottom: 8px; font-size: 13px; font-weight: 700; padding-left: 14px; border-radius: 0px; border: 0px; transition: all .4s ease; -webkit-transition: all .4s ease; } .gmx-social:hover{ margin-top:-15px; } .gmx-social i{ margin-right:0px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#0088cc !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
+        var stylesheet_icon_rounded = '<style>.gmx-social { color: white; float: left; border-radius: 50% !important; margin-right: 10px; /* padding-right: 14px; */ /* padding-top: 8px; */ /* padding-bottom: 8px; */ font-size: 13px; font-weight: 700; width: 35px; height: 35px; /* padding-left: 14px; */ /* border-radius: 0px; */ border: 0px; transition: all .4s ease; -webkit-transition: all .4s ease; text-align: center; } .gmx-social:hover{ margin-top:-15px; } .gmx-social i{ margin-right:0px; } .facebook{ background:#3b5999 !important; } .twitter{ background:#55acee !important; } .linkedin{ background:#0077B5 !important; } .telegram{ background:#0088cc !important; } .tumblr{ background:#00405d !important; } .pinterest{ background:#bd081c !important; } .vk{ background:#45668e !important; } .whatsapp{ background:#43d854 !important; }</style>';
+        
+        if(style == "default"){
+            var stylesheet = stylesheet_default;
+        }else if(style == "icon_squared"){
+            var stylesheet = stylesheet_icon_squared;
+        }else if(style == "icon_rounded"){
+            var stylesheet = stylesheet_icon_rounded;
+        }
         
         $("head").append(fontawesome);
         $("head").append(stylesheet);
