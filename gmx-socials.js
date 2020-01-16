@@ -112,8 +112,8 @@ class gmx_socials{
         var socialNetwork = socialNetwork.toLowerCase();    
             
         var s_Facebook = "http://www.facebook.com/sharer.php?u=";     
-        var s_Twitter = "http://www.linkedin.com/shareArticle?mini=true&amp;url=";
-        var s_Linkedin = "https://twitter.com/share?url=";
+        var s_Twitter = "https://twitter.com/share?url=";
+        var s_Linkedin = "http://www.linkedin.com/shareArticle?mini=true&amp;url=";
         var s_Tumblr = "http://www.tumblr.com/share/link?url=";
         var s_VK = "http://vkontakte.ru/share.php?url=";
         var s_Pinterest = "http://pinterest.com/pin/create/link/?url=";
